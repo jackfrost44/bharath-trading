@@ -1,0 +1,27 @@
+
+<html >
+<head>
+
+    <title>Bharath Vc</title>
+</head>
+<button> <a href="{{ url_for('order_now') }}">Order Now</a></button>
+<body>
+    <h1 style="
+    align-content: center;
+    font-size: 99px;
+    text-align: -webkit-center;
+"> Bharath Vc </h1>
+{% if response %} 
+    <h3>Status : {{ response['code'] }}
+        <br>
+        Executed Order : {{ response['order'] }}
+        <br> <br>
+        The order was : {{ response['message']}}
+    </h3>
+
+{% endif %}
+
+<br> <br>
+
+</body>
+</html>
